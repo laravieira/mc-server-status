@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>LostWorld Page</title>
+        <link rel="icon" type="icon/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- Default metadata -->
+        <meta name="title" content="Lost World">
+        <meta name="Description" content="Página com informações sobre o servidor de minecraft Lost World.">
+        <meta name="author" content="JWDouglas Vieira">
+
+        <!-- Twitter metadata -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Lost World">
+        <meta name="twitter:description" content="Página com informações sobre o servidor de minecraft Lost World.">
+        <meta name="twitter:image" content="http://play.laravieira.me/assets/img/lostworld.png">
+        <meta name="twitter:url" content="http://play.laravieira.me">
+
+        <!-- Facebook metadata -->
+        <meta property="og:site_name" content="Lost World Page">
+        <meta property="og:title" content="Lost World">
+        <meta property="og:description" content="Página com informações sobre o servidor de minecraft Lost World.">
+        <meta property="og:image" content="http://play.laravieira.me/assets/img/lostworld.png">
+        <meta property="og:type" content="website">
+    </head>
+    <body>
+
+        <!-- Header page -->
+        <div class="box">
+            <div class="box-image">
+                <img src="assets/img/lostworld.png" title="LostWorld Logo" />
+            </div>
+            <div class="box-title">
+                <h2>LostWorld</h2>
+            </div>
+            <div class="box-text">
+                <h4 onclick="javascript:copy()">play.laravieira.me</h4>
+                <textarea style="display: none;" id="ip" value="play.laravieira.me">play.laravieira.me</textarea>
+                <small id="copy">clique para copiar.</small>
+            </div>
+        </div>
+
+        <!-- Status page -->
+        <div class="content-status">
+            <div class="status-box dns-box" id="dns-box">
+                <div class="box-header" id="dns-header">
+                    <div class="box-header-title">
+                        <i class="fas fa-bezier-curve"></i>
+                        <h3>DNS Status</h3>
+                    </div>
+                    <div class="box-header-status">
+                        <i id="dns-status-refresh" class="fas fa-sync-alt fa-spin" title="Verificando..."></i>
+                        <i id="dns-status-error" class="fas fa-times" title="Não foi possível verificar."></i>
+                        <i id="dns-status-done" class="fas fa-check" title="Análise concluída e recebida."></i>
+                    </div>
+                </div>
+                <div class="box-content" id="dns-content">
+                    
+                </div>
+            </div>
+            <div class="status-box host-box" id="host-box">
+                <div class="box-header" id="host-header">
+                    <div class="box-header-title">
+                        <i class="fas fa-home"></i>
+                        <h3>Host Status</h3>
+                    </div>
+                    <div class="box-header-status">
+                        <i id="host-status-refresh" class="fas fa-sync-alt fa-spin" title="Verificando..."></i>
+                        <i id="host-status-error" class="fas fa-times" title="Não foi possível verificar."></i>
+                        <i id="host-status-done" class="fas fa-check" title="Análise concluída e recebida."></i>
+                    </div>
+                </div>
+                <div class="box-content" id="host-content">
+                    
+                </div>
+            </div>
+            <div class="status-box server-box" id="server-box">
+                <div class="box-header" id="server-header">
+                    <div class="box-header-title">
+                        <i class="fas fa-cat"></i>
+                        <h3>Server Status</h3>
+                    </div>
+                    <div class="box-header-status">
+                        <i id="server-status-refresh" class="fas fa-sync-alt fa-spin" title="Verificando..."></i>
+                        <i id="server-status-error" class="fas fa-times" title="Não foi possível verificar."></i>
+                        <i id="server-status-done" class="fas fa-check" title="Análise concluída e recebida."></i>
+                    </div>
+                </div>
+                <div class="box-content" id="server-content">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Page -->
+        <div class="footer">
+            <p>&copy; 2020 <span id="year"></span><a target="_blank" href="https://laravieira.me">Lara Vieira</a>.</p>
+            <p>Info de status entregues por <a target="_blank" href="https://api.mcsrvstat.us/">MCS</a>.</p>
+        </div>
+
+        <!-- Script Loads -->
+        <script crossorigin="anonymous" type="text/javascript" src="https://kit.fontawesome.com/d3d61e5e4b.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

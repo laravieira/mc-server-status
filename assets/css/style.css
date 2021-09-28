@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --orange: rgba(242, 135, 5, 1);
+    --yellow: rgba(242, 167, 75, 1);
+    --red:    rgba(242, 56, 56, 1);
+    --l-red:  rgba(217, 113, 113, 1);
+    --black:  rgba(13, 13, 13, 1);
+    --blue:   rgba(102, 188, 242, 1);
+    --d-blue: rgba(22, 97, 143, 1);
+    --green:  rgba(56, 245, 141, 1);
+    --l-gray: rgba(213, 234, 242, 1);
+    --d-gray: rgba(179, 213, 242, 1);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--d-gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--d-blue);
+}
+
+.box {
+    max-width: 500px;
+    margin: 100px auto 0px auto;
+    padding: 0px;
+}
+
+.box-image, .box-title, .box-text, .footer p {
+    text-align: center;
+    margin: 5px auto 5px auto;
+    padding: 0px;
+}
+
+.box-text h4 {
+    margin: 20px 0px 0px 0px;
+    color: rgb(22, 97, 143);
+    font-size: 1.2em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.box-image, .box-image img {
+    width: 100px;
+}
+
+.content-status {
+    position: relative;
+    margin: 50px auto;
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.status-box {
+    margin: 30px 20px;
+    min-width: 300px;
+    border: 3px solid var(--black);
+    border-radius: 7px 18px 7px 7px;
+    box-shadow: 3px 3px 10px -5px var(--d-blue);
+    background: var(--l-gray);
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--d-gray);
+    border-radius: 4px 15px 0px 0px;
+    border-bottom: 2px solid var(--black);
+}
+
+.box-header-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.box-header-title i {
+    font-size: 1.6em;
+    width: 1.8em;
+    margin: auto 0px;
+}
+
+.box-header-title h3 {
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.box-header-status i {
+    display: none;
+}
+
+.box-content {
+    min-height: 100px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.box-content p {
+    margin: 10px;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.footer {
+    position: static;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
